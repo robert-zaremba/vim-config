@@ -10,7 +10,7 @@ How to install
 - Either use the INSTALL.sh script or copy the file into your **~/.vim** folder
 - Open VIM and do `:PluginInstall`
 
-For *YCM (YouCompleteMe plugin)* follow the instruction to build it : https://github.com/Valloric/YouCompleteMe or disable this plugin in the provided **vundle** file.
+For *YCM (YouCompleteMe plugin)* follow the instruction to build it : https://github.com/Valloric/YouCompleteMe or disable this plugin in the provided **~/.vim/vundle** file.
 
 For *Airline* you should follow the "Integrating with powerline fonts" section in order to install the powerline fonts.
 
