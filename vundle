@@ -1,0 +1,95 @@
+" Init Vundle
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" You complete me
+" Installation:
+" install clang
+" cd ~;mkdir .ycm_build; cd .ycm_build;
+" cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+" make ycm_support_libs
+Plugin 'Valloric/YouCompleteMe'
+
+" Ag
+" sudo pacman -S the_silver_searcher
+Plugin 'rking/ag.vim'
+let g:aghighlight=1
+let g:ag_mapping_message=0
+
+" Tagbar
+" sudo pacman -S ctags
+Plugin 'majutsushi/tagbar'
+
+" A collection of language packs.
+Plugin 'sheerun/vim-polyglot'
+
+" Syntastic
+Plugin 'scrooloose/syntastic'
+" let g:syntastic_go_checkers = ['go', 'gofmt', 'golint']
+let g:syntastic_go_checkers = ['gofmt', 'golint']
+
+" Go support
+Plugin 'fatih/vim-go'
+
+" HTML AutoCloseTag
+Plugin 'amirh/HTML-AutoCloseTag'
+
+" Snippets
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+" CSApprox for GVIM compatibility colorscheme
+Plugin 'vim-scripts/CSApprox'
+
+" Zenburn colors
+Plugin 'jnurmine/Zenburn'
+
+" Coloresque
+Plugin 'gorodinskiy/vim-coloresque'
+
+" Vim easy align
+Plugin 'junegunn/vim-easy-align'
+
+" Goldenview
+Bundle 'zhaocai/GoldenView.Vim'
+
+" Gundo
+Plugin 'sjl/gundo.vim'
+
+" tComment for comment toggling
+Plugin 'tomtom/tcomment_vim'
+
+" Airline plugin
+Plugin 'bling/vim-airline'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+
+" Full path fuzzy file, buffer, mru, tag, ... finder.
+Plugin 'kien/ctrlp.vim'
+
+" Git wrapper :Gblame, :Gdiff
+Plugin 'tpope/vim-fugitive'
+
+" A Vim plugin which shows a git diff in the 'gutter' (sign column)
+Plugin 'airblade/vim-gitgutter'
+
+" Vim-Bookmarks
+Plugin 'MattesGroeger/vim-bookmarks'
+
+" Vim TaskList
+Plugin 'vim-scripts/TaskList.vim'
+
+" Vim rainbow parenthesis
+Plugin 'oblitum/rainbow'
+let g:rainbow_active = 1
+
+" Vim Shell
+" Vim proc is needed for vimshell and you need to do 'make'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/vimshell.vim'
+
+" Deinit Vundle
+call vundle#end()
+filetype plugin indent on
